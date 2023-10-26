@@ -8,15 +8,15 @@ public class Usuario {
     private String senha;
     private String perfil;
 
-    public Usuario(String senha) {
-        this.senha = senha;
-    }
-
-    public Usuario(String nome) {
-        this.nome = nome;
-    }
-
     public Usuario() {
+    }
+
+    public Usuario(int id, String nome, String email, String senha, String perfil) {
+        this.id = id;
+        this.nome = nome;
+        this.email = email;
+        this.senha = senha;
+        this.perfil = perfil;
     }
 
     public int getId() {
@@ -59,7 +59,6 @@ public class Usuario {
         this.perfil = perfil;
     }
 
-    
     
 
 }
